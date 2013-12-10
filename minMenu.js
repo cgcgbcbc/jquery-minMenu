@@ -5,7 +5,7 @@
     var param;
     menu.css('position','absolute');
     menu.hide();
-    $(opts.area,document.body).on('click',function(){
+    $(opts.area,document.body).on('click',function(event){
       param = $(this).attr('menu-param');
       var x = event.pageX;
       var y = event.pageY;
