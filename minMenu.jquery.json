@@ -1,0 +1,26 @@
+{
+    "name": "minMenu",
+    "version": "0.0.1",
+    "title": "a minimum menu plug-in for jQuery",
+    "author": {
+        "name": "cgcgbcbc",
+        "email": "cgcgbcbc@gmail.com",
+        "url": "https://plus.google.com/116409551309062078723"
+    },
+    "licenses": [
+        {
+            "type": "GPLv2",
+            "url": "http://opensource.org/licenses/GPL-2.0"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.7"
+    },
+    "description": "This is a minimum menu plug-in for jQuery.",
+    "keywords": [
+        "menu"
+    ],
+    "homepage": "https://github.com/cgcgbcbc/jquery-minMenu",
+    "demo": "http://jsfiddle.net/cgcgbcbc/b5w3F/",
+    "bugs": "https://github.com/cgcgbcbc/jquery-minMenu/issues"
+}
