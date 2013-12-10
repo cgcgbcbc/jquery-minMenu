@@ -15,14 +15,15 @@
       $('.menu-item',menu).each(function(){
         $this = $(this);
         var menuId = $this.attr('menu-id');
-        $this.on('click',{menuId:menuId},function(event){
-          opts.delegate(event.data.menuId);
+        var menuData = $this.attr('menu-data');
+        $this.on('click',{menuId:menuId,menuData:menuData},function(event){
+          opts.delegate(event.data.menuId,event.data.menuData);
         });
       });
     });
   };
   $.fn.minMenu.defaults = {
       area:'body',
-      delegate: function(menuId){}
+      delegate: function(menuId,menuData){}
   };
 })(jQuery)
