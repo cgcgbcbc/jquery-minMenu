@@ -15,7 +15,7 @@
     });
     return this.each(function(){
       $('.menu-item',menu).each(function(){
-        $this = $(this);
+        var $this = $(this);
         var menuId = $this.attr('menu-id');
         var menuData = $this.attr('menu-data');
         $this.on('click',{menuId:menuId,menuData:menuData},function(event){
