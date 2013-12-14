@@ -18,7 +18,7 @@
     },
     "description": "This is a minimum menu plug-in for jQuery.",
     "keywords": [
-        "menu"
+        "menu","minMenu"
     ],
     "homepage": "https://github.com/cgcgbcbc/jquery-minMenu",
     "demo": "http://jsfiddle.net/cgcgbcbc/b5w3F/",
