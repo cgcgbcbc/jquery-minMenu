@@ -6,12 +6,20 @@
     menu.css('position','absolute');
     menu.hide();
     $(opts.area,document.body).on('click',function(event){
-      param = $(this).attr('menu-param');
-      var x = event.pageX;
-      var y = event.pageY;
-      event.stopPropagation();
-      menu.offset({left:x,top:y});
-      menu.show();
+      if ($(opts.area, event.target)) {
+        param = $(this).attr('menu-param');
+        var x = event.pageX;
+        var y = event.pageY;
+        var menuWidth = menu.prop('scrollWidth');
+        var menuHeight = menu.prop('scrollHeight');
+        var screenWidth = document.body.scrollWidth;
+        var screenHeight = document.body.scrollHeight;
+        if (x + menuWidth > screenWidth) x = screenWidth - menuWidth - 2;
+        if (y + menuHeight > screenHeight) y = screenHeight - menuHeight - 2;
+        event.stopPropagation();
+        menu.offset({left:x,top:y});
+        menu.show();
+      }
     });
     return this.each(function(){
       $('.menu-item',menu).each(function(){
